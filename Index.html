@@ -1,1 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Shop</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(45deg, #0088ff, #00c6ff);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 { margin: 0; font-size: 28px; }
+    .container {
+      width: 95%;
+      margin: auto;
+      padding: 20px 0;
+    }
+    .delivery {
+      background: #fff;
+      padding: 15px;
+      margin: 20px auto;
+      border-radius: 12px;
+      max-width: 700px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .delivery h2 {
+      margin-top: 0;
+      color: #0088ff;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .product {
+      background: white;
+      border-radius: 12px;
+      padding: 15px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .product:hover { transform: scale(1.03); }
+    .product img {
+      width: 100%;
+      max-height: 160px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .product h3 { margin: 10px 0 5px; font-size: 18px; }
+    .product p { font-size: 14px; color: #666; }
+    .price {
+      font-size: 16px;
+      font-weight: bold;
+      color: #0088ff;
+      margin: 10px 0;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 16px;
+      margin: 5px;
+      font-size: 14px;
+      border-radius: 8px;
+      text-decoration: none;
+      color: white;
+      transition: 0.3s;
+    }
+    .btn-messenger { background: #006aff; }
+    .btn-whatsapp { background: #25d366; }
+    .btn:hover { opacity: 0.85; }
+    footer {
+      margin-top: 40px;
+      background: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+    }
+    .youtube {
+      margin: 30px auto;
+      text-align: center;
+    }
+    .youtube img {
+      width: 120px;
+      border-radius: 50%;
+    }
+    .yt-btn {
+      display: inline-block;
+      margin-top: 10px;
+      background: #ff0000;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 16px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .yt-btn:hover { opacity: 0.85; }
+  </style>
+</head>
+<body>
 
+  <header>
+    <h1>🛒 My Online Shop</h1>
+    <p>Best Products • Best Price</p>
+  </header>
+
+  <!-- Delivery Details -->
+  <div class="container">
+    <div class="delivery">
+      <h2>🚚 Delivery Details</h2>
+      <p>✅ Dhaka City: 2-3 Days Delivery (Charge: ৳60)</p>
+      <p>✅ Outside Dhaka: 3-5 Days Delivery (Charge: ৳120)</p>
+      <p>✅ Cash on Delivery Available All Over Bangladesh</p>
+    </div>
+
+    <h2>Our Products</h2>
+    <div class="product-grid">
+      <!-- Product 1 -->
+      <div class="product">
+        <img src="https://via.placeholder.com/300x200" alt="Product 1">
+        <h3>Smart Watch</h3>
+        <p>High quality smartwatch with fitness features.</p>
+        <div class="price">৳1500</div>
+        <a href="https://m.me/yourpage" class="btn btn-messenger">Order on Messenger</a>
+        <a href="https://wa.me/8801XXXXXXXXX" class="btn btn-whatsapp">Order on WhatsApp</a>
+      </div>
+      <!-- Product 2 -->
+      <div class="product">
+        <img src="https://via.placeholder.com/300x200" alt="Product 2">
+        <h3>Bluetooth Earbuds</h3>
+        <p>Crystal clear sound with long battery backup.</p>
+        <div class="price">৳1200</div>
+        <a href="https://m.me/yourpage" class="btn btn-messenger">Order on Messenger</a>
+        <a href="https://wa.me/8801XXXXXXXXX" class="btn btn-whatsapp">Order on WhatsApp</a>
+      </div>
+    </div>
+
+    <!-- YouTube Section -->
+    <div class="youtube">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube Logo">
+      <br>
+      <a href="https://www.youtube.com/@YourChannel" class="yt-btn">Visit My YouTube Channel</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 My Online Shop | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
